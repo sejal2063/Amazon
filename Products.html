@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Products | Amazon Clone</title>
+</head>
+<body>
+  <!-- Header (reuse from index.html) -->
+  <header class="section-navbar">
+    <!-- ...copy your header code here... -->
+  </header>
+  <main>
+    <section class="section-products container">
+      <h2 class="section-common--heading">All Products</h2>
+      <div id="productContainer"></div>
+    </section>
+  </main>
+  <!-- Footer (reuse from index.html) -->
+  <footer class="section-footer">
+    <!-- ...copy your footer code here... -->
+  </footer>
+  <template id="productTemplate">
+    <div class="cards">
+      <article class="information [card]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img src="" alt="" class="productImage">
+        </div>
+        <h2 class="productName"></h2>
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i> 
+          <i class="fa-solid fa-star"></i> 
+          <i class="fa-solid fa-star"></i> 
+          <i class="fa-solid fa-star"></i> 
+          <i class="fa-solid fa-star"></i> 
+        </div>
+        <p class="productDescription"></p>
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+        <div class="productStockElement">
+          <p class="productProperty">Total Stock Available:</p>
+          <p class="productStock"></p>
+        </div>
+        <div class="productQualityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+        </button>
+      </article>
+    </div>
+  </template>
+  <script type="module" src="./src/homeProductCards.js"></script>
+</body>
+</html>

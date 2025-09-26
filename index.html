@@ -15,16 +15,13 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vel!
           </p>
         </div>
-        <div class="sign_in_up">
-          <a href="#">SIGN In</a>
-          <a href="#" style="margin: 8px;">LOG In</a>
-        </div>
+        <div class="head_txt">
       </div>
     </section>
     <div class="container">
       <div class="navbar-brand">
         <a href="index.html">
-          <img src="./public/images/log.png" 
+          <img src="/images/log.png" 
           alt=""
           class="logo"  style="height: 70px; width: 120px;">
         </a>
@@ -38,13 +35,21 @@
             <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="Products.html" class="nav-link">Products</a>
-          </li>
-          <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue"><i class="fa-solid fa-cart-shopping">0</i></a>
+            <a href="Products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="signin.html" class="nav-link">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a href="addToCart.html" class="nav-link add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i>
+            <span  id="cartValue"></span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -63,7 +68,7 @@
         </div>
         <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
           <figure>
-            <img src="./public/images/heroSection.svg" alt="">
+            <img src="/images/heroSection.svg" alt="">
           </figure>
         </div>
       </div>
@@ -102,7 +107,7 @@
           <a href="#">Show Now</a>
         </div>
         <div class="extra-img extra-laptop">
-          <img src="./public/images/laptop.png" alt="">
+          <img src="/images/laptop.png" alt="">
         </div>
       </div>
       <div class="div-extra grid grid-two--cols">
@@ -112,7 +117,7 @@
           <a href="#">Show Now</a>
         </div>
         <div class="extra-img extra-laptop">
-          <img src="./public/images/headphoneEcom.png" alt="">
+          <img src="/images/headphoneEcom.png" alt="">
         </div>
       </div>
       <div class="div-extra grid grid-two--cols">
@@ -122,7 +127,7 @@
           <a href="#">Show Now</a>
         </div>
         <div class="extra-img extra-laptop">
-          <img src="./public/images/mobiles.png" alt="">
+          <img src="/images/mobiles.png" alt="">
         </div>
       </div>
     </div>
@@ -240,7 +245,7 @@
       </div>
       <div class="choose-center-div" data-aos="zoom-in-up" data-aos-delay="300">
         <figure>
-          <img src="./public/images/ecompost.png" alt="">
+          <img src="/images/ecompost.png" alt="">
         </figure>
       </div>
       <div class="choose-right-div">
@@ -265,7 +270,7 @@
   <footer class="section-footer">
     <div class="footer-container container">
       <div class="content_1">
-        <img src="./public/images/log.png" alt="">
+  <img src="/images/log.png" alt="">
         <p>Lorem ipsum dolor 
           sit amet consectetur adipisicing elit. 
           Veritatis, provident!</p>
@@ -301,6 +306,17 @@
       </div>
     </div>
   </footer>
+  <form class="contact-form">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+<form class="login-form">
+  <input type="email" placeholder="Email" required autocomplete="username">
+  <input type="password" placeholder="Password" required autocomplete="current-password">
+  <button type="submit">Login</button>
+</form>
 </body>
 <script type="module" src="./src/main.js"></script>
 </html>
