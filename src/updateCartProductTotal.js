@@ -28,3 +28,5 @@ export const updateCartProductTotal = () => {
   if (subTotalElem) subTotalElem.textContent = subTotal;
   if (finalTotalElem) finalTotalElem.textContent = finalTotal;
 };
+// Call this function to initialize totals on page load
+updateCartProductTotal();
