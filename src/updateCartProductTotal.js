@@ -10,8 +10,7 @@ export const updateCartProductTotal = () => {
   const cartProducts = JSON.parse(localStorage.getItem("cartProductLS")) || [];
   let subTotal = 0;
   cartProducts.forEach(item => {
-    // If item.price is per unit, use: (item.price * item.quantity)
-    // If item.price is already total for that item, just sum it
+  
     if (item.quantity && item.price) {
       subTotal += item.price * item.quantity;
     } else if (item.price) {
